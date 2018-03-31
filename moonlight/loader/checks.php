@@ -58,6 +58,12 @@ if(isset($_GET['username']))
                 // Set the HWID
                 $obj->query("UPDATE `users` SET `hwid`='$hwid' WHERE username='$uid'");
                 
+                // Save ip
+                $ip = $_SERVER['REMOTE_ADDR'];
+                
+                // Set the IP
+                $obj->query("UPDATE `users` SET `ip`='$ip' WHERE username='$uid'");
+                
                  // Now, we want to gen the token.
                 $token = randomKey(20);
                     
