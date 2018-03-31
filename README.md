@@ -15,7 +15,7 @@ string url = "http://***.com/loader/download.php";
 // Create the WebClient object
 WebClient client = new WebClient();
 
-// These are hear if you want event handlers for these things, comment out or delete if not
+// These are here if you want event handlers for these things, comment out or delete if not
 client.DownloadFileCompleted += new AsyncCompletedEventHandler(client_DownloadFileCompleted);
 client.DownloadProgressChanged += new DownloadProgressChangedEventHandler(ProgressChanged);
 
