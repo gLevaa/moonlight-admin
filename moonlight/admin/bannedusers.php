@@ -25,7 +25,7 @@ include("../header.php");
 		  while($row = $result->fetch_assoc())
 		  {
 		      if($row['banned'] != 'false') {
-		        echo htmlspecialchars('<tr style="font-family: monospace, monospace; ">
+		        echo '<tr style="font-family: monospace, monospace; ">
 			            <td>' . $row['username'] . "</td>
 			            <td>" . $row['ip'] . "</td>
 			            <td>" . $row['hwid'] . "</td>
@@ -37,7 +37,7 @@ include("../header.php");
                         </form>
                         </td>
                         
-		            </tr>', ENT_QUOTES, 'UTF-8');
+		            </tr>';
 		      }
 		  }
 		  
