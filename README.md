@@ -36,9 +36,9 @@ Also, keep in mind when using this you <b>do not</b> need to set the HWID or IP.
 
 ## Returns for downloads.php
 <ul>
-  <li>`2hu1ij123b` - User doesn't exist or token wasn't gen'd properly</li>
-  <li>`2oj32ih312b3md` - Expired token</li>
-  <li>`9eriuasd2u` - Couldn't find the file to download</li>
+  <li>2hu1ij123b - User doesn't exist or token wasn't gen'd properly</li>
+  <li>2oj32ih312b3md - Expired token</li>
+  <li>9eriuasd2u - Couldn't find the file to download</li>
 </ul>
 
 # Setup
@@ -46,9 +46,9 @@ I'm not going to spoonfeed you with this. So I'll keep it short and simple.
 
 <ol>
   <li>Get the moonlight dir onto your site</li>
-  <li>Use the SQL file in `/sql/` to setup your database</li>
+  <li>Use the SQL file in /sql/ to setup your database</li>
   <li>Create a SQL user and add it to your database with all privellages</li>
-  <li>Change information in `connection.php` to what the comments say</li>
-  <li>Replace `checks.php` on line 52 of `download.php` with the path to your DLL</li>
+  <li>Change information in connection.php to what the comments say</li>
+  <li>Replace checks.php on line 52 of download.php with the path to your DLL</li>
 </ol>
   
