@@ -49,6 +49,7 @@ I'm not going to spoonfeed you with this. So I'll keep it short and simple.
   <li>Use the SQL file in /sql/ to setup your database</li>
   <li>Create a SQL user and add it to your database with all privellages</li>
   <li>Change information in connection.php to what the comments say</li>
-  <li>Replace checks.php on line 52 of download.php with the path to your DLL</li>
+  <li>Replace checks.php on line 52 of download.php with the path to your DLL/Dylib/Injector&Dylib/DLL</li>
+  <li>To create a user, insert one manually through PHPMyAdmin, just recreate the add.scr.php script's techniques of hashing the password, set your status to 'admin', hwid to 'not set', and salt to the one you used to hash the password. 
 </ol>
   
