@@ -97,7 +97,7 @@ if(isset($_GET['username']))
                     $token = randomKey(20);
                     
                     // Current time + 2 minutes
-                    $time = date("m/d/Y h:i:sa", time() + 120);
+                    $time = date("U") + 120;
                     
                     // Insert the token into the DB
                     $obj->query("INSERT INTO `tokens`(`username`, `token`, `expiry`) VALUES ('$uid', '$token', '$time')");
