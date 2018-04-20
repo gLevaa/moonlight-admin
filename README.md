@@ -30,8 +30,8 @@ Also, keep in mind when using this you <b>do not</b> need to set the HWID or IP.
   <li>2oia92n - User doesn't exist</li>
   <li>kja8y2na1 - Incorrect password</li>
   <li>92i1msu71h - Incorrect HWID</li>
-  <li>iakh817b1::*20 char key* - First login, HWID & IP set. The 20 char key after :: is the token. Seperate the string up and save the token in the loader.</li>
-  <li>sij28nak::*20 char key* - All was correct. The 20 char key after :: is the token. Seperate the string up and save the token in the loader.</li>
+  <li>iakh817b1:*20 char key* - First login, HWID & IP set. The 20 char key after :: is the token. Seperate the string up and save the token in the loader.</li>
+  <li>sij28nak:*20 char key* - All was correct. The 20 char key after :: is the token. Seperate the string up and save the token in the loader.</li>
 </ul>
 
 ## Returns for downloads.php
