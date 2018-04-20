@@ -74,7 +74,7 @@ if(isset($_GET['username']))
                 $obj->query("INSERT INTO `tokens`(`username`, `token`, `expiry`) VALUES ('$uid', '$token', '$time')");
                     
                 // Return the token and the OK to the loader.
-                echo("iakh817b1::" . $token);
+                echo("iakh817b1:" . $token);
                 
                 die();
             }
@@ -103,7 +103,7 @@ if(isset($_GET['username']))
                     $obj->query("INSERT INTO `tokens`(`username`, `token`, `expiry`) VALUES ('$uid', '$token', '$time')");
                     
                     // Return the token and the OK to the loader.
-                    echo("sij28nak::" . $token);
+                    echo("sij28nak:" . $token);
                     
                 }
                 
