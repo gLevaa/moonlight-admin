@@ -26,7 +26,7 @@ if(isset($_GET['username']))
     if(!$result->num_rows > 0)
     {
         // If the user doesnt exist
-        echo "2oia92n";
+        echo "202";
         die();
     }
     else
@@ -44,7 +44,7 @@ if(isset($_GET['username']))
         if($password != $row['password'])
         {
             // Incorrect password
-            echo "kja8y2na1";
+            echo "203";
             die();
         }
         else
@@ -74,7 +74,7 @@ if(isset($_GET['username']))
                 $obj->query("INSERT INTO `tokens`(`username`, `token`, `expiry`) VALUES ('$uid', '$token', '$time')");
                     
                 // Return the token and the OK to the loader.
-                echo("iakh817b1:" . $token);
+                echo("205:" . $token);
                 
                 die();
             }
@@ -85,7 +85,7 @@ if(isset($_GET['username']))
                 if($hwid != $row['hwid'])
                 {
                     // Incorrect HWID
-                    echo("92i1msu71h");
+                    echo("204");
                     die();
                 }
                 else
@@ -103,7 +103,7 @@ if(isset($_GET['username']))
                     $obj->query("INSERT INTO `tokens`(`username`, `token`, `expiry`) VALUES ('$uid', '$token', '$time')");
                     
                     // Return the token and the OK to the loader.
-                    echo("sij28nak:" . $token);
+                    echo("206:" . $token);
                     
                 }
                 
