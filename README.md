@@ -27,11 +27,11 @@ Also, keep in mind when using this you <b>do not</b> need to set the HWID or IP.
 
 ## Returns for checks.php
 <ul>
-  <li>2oia92n - User doesn't exist</li>
-  <li>kja8y2na1 - Incorrect password</li>
-  <li>92i1msu71h - Incorrect HWID</li>
-  <li>iakh817b1:*20 char key* - First login, HWID & IP set. The 20 char key after :: is the token. Seperate the string up and save the token in the loader.</li>
-  <li>sij28nak:*20 char key* - All was correct. The 20 char key after :: is the token. Seperate the string up and save the token in the loader.</li>
+  <li>202 - User doesn't exist</li>
+  <li>203 - Incorrect password</li>
+  <li>204 - Incorrect HWID</li>
+  <li>205:*20 char token* - First login, HWID & IP set. The 20 char key after :: is the token. Seperate the string up and save the token in the loader.</li>
+  <li>206:*20 char token* - All was correct. The 20 char key after :: is the token. Seperate the string up and save the token in the loader.</li>
 </ul>
 
 ## Returns for downloads.php
