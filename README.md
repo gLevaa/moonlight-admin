@@ -41,7 +41,7 @@ Also, keep in mind when using this you <b>do not</b> need to set the HWID or IP.
   <li>9eriuasd2u - Couldn't find the file to download</li>
 </ul>
 
-# Setup
+## Setup
 I'm not going to spoonfeed you with this. So I'll keep it short and simple.
 
 <ol>
@@ -52,4 +52,7 @@ I'm not going to spoonfeed you with this. So I'll keep it short and simple.
   <li>Replace checks.php on line 52 of download.php with the path to your DLL/Dylib/Injector&Dylib/DLL</li>
   <li>To create a user, insert one manually through PHPMyAdmin, just recreate the add.scr.php script's techniques of hashing the password, set your status to 'admin', hwid to 'not set', and salt to the one you used to hash the password. 
 </ol>
+
+# Credits
+Coinhive for the CSS
   
