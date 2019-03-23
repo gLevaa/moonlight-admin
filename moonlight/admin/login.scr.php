@@ -14,7 +14,7 @@ if(isset($_POST["username"]))
 {
     
     // Username or password is empty
-    if(empty($uid) || empty($pwd))
+    if(strlen($uid) == 0 || strlen($pwd) == 0)
     {
         // Redirect with empty field error
         header("Location: ../index.php?error=empty-field");
