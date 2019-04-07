@@ -42,8 +42,6 @@ Also, keep in mind when using this you <b>do not</b> need to set the HWID or IP.
 </ul>
 
 ## Setup
-I'm not going to spoonfeed you with this. So I'll keep it short and simple.
-
 <ol>
   <li>Get the moonlight dir onto your site</li>
   <li>Use the SQL file in /sql/ to setup your database</li>
