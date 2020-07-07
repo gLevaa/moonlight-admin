@@ -1,29 +1,15 @@
 # moonlight-admin
+### Created March, 2018
 Easy to use admin panel, designed for cheat loaders.
 
-# Uses
-So, this is an admin panel I was designing to be used with a CS:GO cheat loader made in native C++, but gave up on that and just open sourced the panel. 
+# Explanation
+An admin panel to be used wtih the `overseas-loader` repository located on my profile.
 
-This panel is just a page to log in, checks for admin status, then grants access to the admin panel. This panel is able to add users, ban users and also comes included with the scripts needed for a loader. The two scripts, `checks.php` and `download.php` in the loader directory are what the cheat loader would use.
+This panel simply consists of a page to log in, ban/unban and add users to the access to the cheat. The two scripts in `loader/` are used for the cheat loader.
 
-`checks.php` is sent a GET request from the loader with a username, password, and hardware identifier (check the script for exact GET values). Then, the script will check these values from the request and return a string to be read by the cheat loader. If the HWID is correct, password etc. the script will generate a token stored in the `tokens` table a long with a date 2 minutes from the generation time. Then, when you want to download the DLL to inject into the game, you make a request like this (assuming you're using C#)
+`checks.php` receives a GET request from the `overseas-loader` with a username, password and string generated using hardware serial numbers and specifications. These values are then checked against the database. If the login is successful and from the correct computer (as identified by hardware information), a token will be generated and stored in the database with a two minute expiry. This token is returned to the loader.
 
-```
-// Set the URL of the download script
-string url = "http://***.com/loader/download.php";
-
-// Create the WebClient object
-WebClient client = new WebClient();
-
-// These are here if you want event handlers for these things, comment out or delete if not
-client.DownloadFileCompleted += new AsyncCompletedEventHandler(client_DownloadFileCompleted);
-client.DownloadProgressChanged += new DownloadProgressChangedEventHandler(ProgressChanged);
-
-// Download the file to your given directory
-client.DownloadFileAsync(new Uri(url), @"c:/temp/");
-```
-
-Also, keep in mind when using this you <b>do not</b> need to set the HWID or IP. These will auto-set on first request to checks.php
+A second request is made to download from the `download.php` with the username and token as GET paramaters. If the token has been activated within two minutes and the username corresponds to this token, then the download will begin. Re-authentication is not needed as the token is return as a result of a valid login.
 
 ## Returns for checks.php
 <ul>
